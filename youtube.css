@@ -6,18 +6,23 @@ body
 {
     background-color: gray;
 }
+.container{
+    display: flex;
+}
 .right-container
 {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 20%;
     background-color: white;
     height: auto;
 }
 .youtubelogodiv
-{
-    flex: 20%;
-    padding: 5px 25px;
+{   
     display: flex;
     flex-direction: row;
+    margin: 15px 0 0 15px;
 }
 #menulogo
 {
@@ -43,9 +48,86 @@ body
 {
     margin: 10px 0 0 8px;
     font-size: 20px;
+    cursor: pointer;
+}
+.youtubelogodiv > p
+{
+    margin-left: 10px;
+}
+.options
+{
+    display: block;
+    flex-direction: column;
+}
+.homediv
+{
+    margin-top: 15px;
+    padding: 8px 0 7px 17px;
+}
+#homeicon
+{
+    font-size: 30px;
+}
+.homediv > h4
+{
+    display: inline;
+    margin-left: 8%;
+    font-size: 20px;
+}
+.homediv:hover
+{
+    background-color: lightgray;
+}
+.explorardiv
+{
+    margin-top: 4px;
+    padding: 10px 0 5px 17px;
+    
+}
+.explorardiv > h4
+{
+    display: inline;
+    margin: 0 0 0 25px;
+    font-size: 20px;
+}
+.options > .explorardiv:hover
+{
+    background-color: lightgray;
+}
+#compassicon
+{
+    font-size: 30px;
 }
 .bodymaterialdiv
 {
+    display: flex;
+    flex-wrap: wrap;
     background-color: lightgray;
     flex: 80%;
+}
+.searchdiv
+{
+    margin: 5px 0 0 15%;
+    border: 1px solid black; 
+    width: 50%;
+    height: 20%;
+}
+input
+{
+    display: inline;
+    flex-direction: row;
+    width: 95%;
+    padding: 5px;
+    border: none;
+}
+input::placeholder
+{
+    font-family:cursive;
+    font-size: 20px ;
+}
+#searchicon
+{
+    padding: 0.2px 2px 6px 4px;
+    background-color: lightgray;
+    font-size: 25px;
 }
