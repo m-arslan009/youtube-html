@@ -15,7 +15,34 @@ body
 .youtubelogodiv
 {
     flex: 20%;
-    padding: 10px 25px;
+    padding: 5px 25px;
+    display: flex;
+    flex-direction: row;
+}
+#menulogo
+{
+    font-size: 22px;
+    width: 16px;
+    padding: 10px 15px 10px 10px;
+    border-radius: 50%;
+}
+#menulogo:hover
+{
+    background-color: lightgray;
+    cursor: pointer;
+    /* margin-top:-30px; */
+}
+#youtubelogo
+{
+    color: red;
+    font-size: 35px;
+    margin: 4px 0 0 15px;
+    cursor: pointer;
+}
+#youtubeName
+{
+    margin: 10px 0 0 8px;
+    font-size: 20px;
 }
 .bodymaterialdiv
 {
