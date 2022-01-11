@@ -17,7 +17,7 @@ body
 #menuicon
 {
     font-size: 25px;
-    padding: 9px 12px 7PX 12PX;
+    padding: 9px 12px 7PX 10PX;
 }
 #menuicon:hover
 {
@@ -119,4 +119,106 @@ input::placeholder
     margin: 13px 0 0 17px;
     color: rgb(0, 157, 255);
     padding: 0 7px 2px 0;
+}
+.body-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-container
+{
+    display: grid;
+    grid-template-columns: auto;
+    flex: 17%;
+    overflow-y:scroll;
+}
+.homediv
+{
+    display: flex;
+    flex-direction: row;
+}
+.homediv:hover
+{
+    background-color: green;
+    cursor: pointer;
+}
+#home-icon
+{
+    margin: 12px 0 6px 30px;
+    font-size: 25px;
+}
+.homediv > h4
+{
+    font-size: 20px;
+    margin: 16px 0 0 25px;
+}
+.left-container > h5
+{
+    font-size: 20px;
+    margin: 25px;
+}
+.signin-leftdiv
+{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid skyblue;
+    padding: 10px;
+    width: 50%;
+    margin: 7px 0 20px 30px;
+    cursor: pointer;
+}
+.signin-leftdiv > h4
+{
+    font-size: 20px;
+    margin: 4px 0 0 15px;
+    color: skyblue;
+}
+#user-icon
+{
+    color: skyblue;
+    font-size: 27px;
+}
+h3
+{
+    margin: 15px 0 10px 18px;
+}
+#best-oficon
+{
+    margin: 12px 0 6px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 8px 11px 7px 9px;
+    border-radius: 50%;
+}
+#music
+{
+    margin: 20px 0 0 20px;
+    font-size: 20px;
+}
+#plus
+{
+    margin: 15px 0 10px 27px;
+    font-size: 35px;
+}
+#signles
+{
+    margin: 20px 0 10px 27px;
+    font-size: 20px;
+}
+#setting-icon
+{
+    margin: 10px 0 15px 20px;
+    font-size: 25px;
+}
+#setting
+{
+    display: inline;
+    margin: 10px 0 0 20px;
+    font-size: 20px;
+}
+.body-material
+{
+    flex:82%;
+    background-color: teal;
 }
