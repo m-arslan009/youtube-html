@@ -5,6 +5,7 @@
 body
 {
     background-color: gray;
+    overflow: hidden;
 }
 .searchdiv
 {
@@ -147,12 +148,12 @@ input::placeholder
 #home-icon
 {
     margin: 12px 0 6px 30px;
-    font-size: 25px;
+    font-size: 23px;
 }
 .homediv > h4
 {
     font-size: 20px;
-    margin: 16px 0 0 25px;
+    margin: 13px 0 0 25px;
 }
 .left-container > h5
 {
@@ -171,7 +172,7 @@ input::placeholder
 }
 .signin-leftdiv > h4
 {
-    font-size: 20px;
+    font-size: 17px;
     margin: 4px 0 0 15px;
     color: skyblue;
 }
@@ -187,7 +188,7 @@ h3
 #best-oficon
 {
     margin: 12px 0 6px 30px;
-    font-size: 20px;
+    font-size: 17px;
     color: white;
     background-color: black;
     padding: 8px 11px 7px 9px;
@@ -196,7 +197,7 @@ h3
 #music
 {
     margin: 20px 0 0 20px;
-    font-size: 20px;
+    font-size: 15px;
 }
 #plus
 {
@@ -233,28 +234,37 @@ h3
     font-size: 13px;
     margin: 15px 0 20px 20px;
 }
-.body-material
+.body-subcontainer
 {
+    border-top: 1px solid gray;
     flex:82%;
-    background-color: teal;
+    flex-wrap: wrap;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    flex-wrap: wrap;
-    border-top: 1px solid gray;
+    overflow-y:scroll ;
 }
-.grid-itms
+.grid-items
 {
-    margin: 50px 0 0 10px;
+    margin: 20px 0 0 15px;
+    width: 90%;
+    height: 70%;
     cursor: pointer;
-    width: 60%;
+    background-color: green;
 }
-#one
+.grid-items-1
+{
+    margin: 0 0 0 15px;
+    width: 90%;
+    height: 70%;
+    cursor: pointer;
+    background-color: green;
+}
+.image
 {
     width: 100%;
-    height: 30%;
+    height: 100%;
 }
-.grid-itms > p
+.grid-items > p
 {
     font-size: 20px;
-    margin: 20px 0 0 1px;
 }
