@@ -30,6 +30,14 @@ body
     border-radius: 50%;
     cursor: pointer;
 }
+#bell-icon
+{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-left: 14%;
+    /* display: none; */
+    color: white;
+}
 .youtube-iconname
 {
     cursor: pointer;
@@ -57,7 +65,7 @@ body
 }
 .placeholder
 {
-    margin-left: 19%;
+    margin-left: 5%;
     border: 1px solid black;
     display: flex;
     flex-direction: row;
@@ -294,21 +302,23 @@ h3
 @media all and (max-width:900px)
 {
     body{overflow-y: scroll;}
+    .searchdiv{width: 94%; margin-top:-50px;}
     .youtube-iconname{margin-left: -10px;}
     .searchdiv{position: fixed;}
     .left-container{position: fixed; bottom: 0; left: 0; height: 12%; width: 100%; display: flex; flex-direction: row; padding-left: 5px; background-color: white;}
+    .body-container{margin-top: 50px;}
     .body-subcontainer{grid-template-columns:auto;}
     .written, #final {display: none;}
     #home-iconname{flex-direction: column;}
     #quri-plus{display: inline; font-size: 40px; margin: 5px 0 0 0;}
     hr{display: none;}
     #other-iconnames{display: none;}
-    .searchdiv{width: 87%;}
     #settingdiv{display: none;}
     #setting-iconname{margin-left: 10px;}
     #menuicon{display: none;}
     .placeholder{border: none;}
-    #searchicon{background-color: transparent; margin-left: 120px; border-radius: 50%; padding: 7px 7px 7px 7px;}
+    #bell-icon{color: black; font-size: 25px; margin: 5px 0 0 200px;}
+    #searchicon{background-color: transparent; margin-left: 0; border-radius: 50%; padding: 7px 7px 7px 7px;}
     #user{margin-left: -110px;}
     #youtubeicon{display: inline;}
     .signindiv > h4{display: none;}
@@ -317,4 +327,5 @@ h3
     #microphone{display: none;}
     #square, #dots{display: none;}
     .grid-items{height: 60%;}
+    hr{display: none;}
 }
