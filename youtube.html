@@ -4,13 +4,14 @@
         <title>Youtube</title>
         <link rel="stylesheet" href="youtube.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="container">
             <div class="searchdiv">
                 <i class="fa fa-bars" aria-hidden="true" id="menuicon"></i>
                 <div class="youtube-iconname">
-                    <i class="fa fa-youtube-play" aria-hidden="true" id="youtubeicon"></i><h4>YouTube</h4>
+                    <i class="fa fa-youtube-play" aria-hidden="true" id="youtubeicon"></i><h4 id="name">YouTube</h4>
                 </div>
                 <div class="placeholder"><input type="search" placeholder="Search"><i class="fa fa-search" aria-hidden="true" id="searchicon"></i></div>
                 <i class="fa fa-microphone" aria-hidden="true" id="microphone"></i>
@@ -24,42 +25,43 @@
             </div>
             <div class="body-container">
                 <div class="left-container">
-                    <div class="homediv"><i class="fa fa-home" aria-hidden="true" id="home-icon"></i><h4 id="home-name">Home</h4></div>
-                    <div class="homediv"><i class="fa fa-compass" aria-hidden="true" id="home-icon"></i><h4>Explore</h4></div>
-                    <div class="homediv"><i class="fa fa-youtube-play" aria-hidden="true" id="home-icon"></i><h4>Subscription</h4></div>
+                    <div class="homediv" id="home-iconname"><i class="fa fa-home" aria-hidden="true" id="home-icon"></i><h4 id="home-name">Home</h4></div>
+                    <div class="homediv" id="home-iconname"><i class="fa fa-compass" aria-hidden="true" id="home-icon"></i><h4>Explore</h4></div>
+                    <i class="fa fa-plus-circle" aria-hidden="true" id="quri-plus"></i>
+                    <div class="homediv" id="home-iconname"><i class="fa fa-youtube-play" aria-hidden="true" id="home-icon"></i><h4>Subscription</h4></div>
                     <hr>
-                    <div class="homediv"><i class="fa fa-book" aria-hidden="true" id="home-icon"></i><h4>Library</h4></div>
-                    <div class="homediv"><i class="fa fa-history" aria-hidden="true" id="home-icon"></i><h4>History</h4></div>
+                    <div class="homediv" id="home-iconname"><i class="fa fa-book" aria-hidden="true" id="home-icon"></i><h4>Library</h4></div>
+                    <div class="homediv" id="other-iconnames"><i class="fa fa-history" aria-hidden="true" id="home-icon"></i><h4>History</h4></div>
                     <hr>
-                    <h5>Sign in to like videos, comment, and subscribe.</h5>
-                    <div class="signin-leftdiv">
+                    <h5 id="other-iconnames">Sign in to like videos, comment, and subscribe.</h5>
+                    <div class="signin-leftdiv" id="other-iconnames">
                         <i class="fa fa-user-circle-o" aria-hidden="true" id="user-icon"></i><h4>SIGN IN</h4>
                     </div>
                     <hr>
-                    <H3>BEST OF YOUTUBE</H3>
-                    <div class="homediv"><i class="fa fa-music" aria-hidden="true" id="best-oficon"></i><p id="music">Music</P></div>
-                    <div class="homediv"><i class="fa fa-trophy" aria-hidden="true" id="best-oficon"></i><p id="music">Sports</p></div>
-                    <div class="homediv"><i class="fa fa-gamepad" aria-hidden="true" id="best-oficon"></i><p id="music">Gaming</p></div>
-                    <div class="homediv"><i class="fa fa-newspaper-o" aria-hidden="true" id="best-oficon"></i><p id="music">News</p></div>
-                    <div class="homediv"><i class="fa fa-signal" aria-hidden="true" id="best-oficon"></i><p id="music">Live</p></div>
-                    <div class="homediv"><i class="fa fa-eye" aria-hidden="true" id="best-oficon"></i><p id="music">360° Video</p></div>
+                    <H3 id="other-iconnames">BEST OF YOUTUBE</H3>
+                    <div class="homediv" id="other-iconnames"><i class="fa fa-music" aria-hidden="true" id="best-oficon"></i><p id="music">Music</P></div>
+                    <div class="homediv" id="other-iconnames"><i class="fa fa-trophy" aria-hidden="true" id="best-oficon"></i><p id="music">Sports</p></div>
+                    <div class="homediv" id="other-iconnames"><i class="fa fa-gamepad" aria-hidden="true" id="best-oficon"></i><p id="music">Gaming</p></div>
+                    <div class="homediv" id="other-iconnames"><i class="fa fa-newspaper-o" aria-hidden="true" id="best-oficon"></i><p id="music">News</p></div>
+                    <div class="homediv" id="other-iconnames"><i class="fa fa-signal" aria-hidden="true" id="best-oficon"></i><p id="music">Live</p></div>
+                    <div class="homediv" id="other-iconnames"><i class="fa fa-eye" aria-hidden="true" id="best-oficon"></i><p id="music">360° Video</p></div>
                     <hr>
-                    <div class="homediv"><i class="fa fa-plus-circle" aria-hidden="true" id="plus"></i><p id="music">Browse channal</p></div>
+                    <div class="homediv" id="other-iconnames"><i class="fa fa-plus-circle" aria-hidden="true" id="plus"></i><p id="music">Browse channal</p></div>
                     <hr>
-                    <h3>MORE FORM YOUTUBE</h3>
-                    <div class="homediv"><i class="fa fa-signal" aria-hidden="true" id="signles"></i><p id="music">Live</p></div>
+                    <h3 id="other-iconnames">MORE FORM YOUTUBE</h3>
+                    <div class="homediv" id="other-iconnames"><i class="fa fa-signal" aria-hidden="true" id="signles"></i><p id="music">Live</p></div>
                     <hr>
-                    <div class="homediv" id="settingdiv"><i class="fa fa-cog" aria-hidden="true" id="setting-icon"><p id="setting">Setting</p></i></div>
-                    <div class="homediv"><i class="fa fa-flag" aria-hidden="true" id="setting-icon"></i><p id="setting">Report History</p></div>
-                    <div class="homediv"><i class="fa fa-question-circle-o" aria-hidden="true" id="setting-icon"></i><p id="setting">Help</p></div>
-                    <div class="homediv"><i class="fa fa-exclamation-circle" aria-hidden="true" id="setting-icon"></i><p id="setting">Send Feedback</p></div>
+                    <div class="homediv" id="settingdiv"><i class="fa fa-cog" aria-hidden="true" class="settingicon" id="setting-icon" id="setting-iconname"><p id="setting">Setting</p></i></div>
+                    <div class="homediv" id="other-iconnames"><i class="fa fa-flag" aria-hidden="true" id="setting-icon"></i><p id="setting">Report History<PP/p></div>
+                    <div class="homediv" id="other-iconnames"><i class="fa fa-question-circle-o" aria-hidden="true" id="setting-icon"></i><p id="setting">Help</p></div>
+                    <div class="homediv" id="other-iconnames"><i class="fa fa-exclamation-circle" aria-hidden="true" id="setting-icon"></i><p id="setting">Send Feedback</p></div>
                     <hr>
-                    <p class="written">About  Press  Copyright <br> Contact us  Creators  <br> Advertise  Developers</p>
-                    <p class="written">Terms  Privacy Policy&Safety <br> How YouTube works <br> Test new features</p>
-                    <p id="final">© 2022 Google LLC</p>
+                    <p class="written" id="other-iconnames">About  Press  Copyright <br> Contact us  Creators  <br> Advertise  Developers</p>
+                    <p class="written" id="other-iconnames">Terms  Privacy Policy&Safety <br> How YouTube works <br> Test new features</p>
+                    <p id="final" id="other-iconnames">© 2022 Google LLC</p>
                 </div>
                 <div class="body-subcontainer">
-                    <div class="grid-items"><img src="one.jpg" class="image"><p>what a beautiful sceen</p></div>
+                    <div class="grid-items" id="fist-image"><img src="one.jpg" class="image"><p>what a beautiful sceen</p></div>
                     <div class="grid-items"><img src="three.jpg" class="image"><p>again beautiful site</p></div>
                     <div class="grid-items"><img src="four.jpg" class="image"></div>
                     <div class="grid-items"><img src="five.jpg" class="image"></div>

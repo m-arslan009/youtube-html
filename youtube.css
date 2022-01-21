@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 body
 {
-    background-color: gray;
+    /* background-color: gray; */
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 .searchdiv
 {
@@ -17,8 +20,9 @@ body
 }
 #menuicon
 {
-    font-size: 25px;
+    font-size: 20px;
     padding: 9px 12px 7PX 10PX;
+    font-weight: lighter;
 }
 #menuicon:hover
 {
@@ -29,28 +33,31 @@ body
 .youtube-iconname
 {
     cursor: pointer;
+    margin-left: 10px;
 }
 #youtubeicon
 {
-    font-size: 27px;
+    display: inline;
+    font-size: 30px;
     padding:7px 9px ;
-    margin-left: 20px;
     color: red;
 }
 .youtube-iconname > h4
 {
     display: inline;
     font-size: 25px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 .placeholder > input
 {
     width: 400px;
     border: none;
     padding-right: 10px;
+    font-size: 20px;
 }
 .placeholder
 {
-    margin-left: 13%;
+    margin-left: 19%;
     border: 1px solid black;
     display: flex;
     flex-direction: row;
@@ -58,7 +65,7 @@ body
 input::placeholder
 {
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 20px;
 }
 #searchicon
 {
@@ -116,8 +123,8 @@ input::placeholder
 }
 .signindiv > h4
 {
-    font-size: 17px;
-    margin: 13px 0 0 17px;
+    font-size: 15px;
+    margin: 13px 0 0 15px;
     color: rgb(0, 157, 255);
     padding: 0 7px 2px 0;
 }
@@ -128,12 +135,20 @@ input::placeholder
 }
 .left-container
 {
-    background-color: white;
+    background-color: gray;
     display: grid;
     grid-template-columns: auto;
     flex: 17%;
-    overflow-y:scroll;
+    overflow: hidden;
     height: 700px;
+}
+.left-container:hover
+{
+    overflow-y: scroll;
+}
+::-webkit-scrollbar-track-piece
+{
+    color: tomato;
 }
 .homediv
 {
@@ -142,7 +157,7 @@ input::placeholder
 }
 .homediv:hover
 {
-    background-color: green;
+    background-color: lightgray;
     cursor: pointer;
 }
 #home-icon
@@ -152,12 +167,21 @@ input::placeholder
 }
 .homediv > h4
 {
-    font-size: 20px;
+    font-size: 15px;
     margin: 13px 0 0 25px;
+    font-weight: lighter;
+}
+.homediv > p
+{
+    font-size: 20px;
+}
+#quri-plus
+{
+    display: none;
 }
 .left-container > h5
 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 25px;
 }
 .signin-leftdiv
@@ -183,12 +207,13 @@ input::placeholder
 }
 h3
 {
+    font-size: 17px;
     margin: 15px 0 10px 18px;
 }
 #best-oficon
 {
     margin: 12px 0 6px 30px;
-    font-size: 17px;
+    font-size: 15px;
     color: white;
     background-color: black;
     padding: 8px 11px 7px 9px;
@@ -223,16 +248,14 @@ h3
 .written
 {
     cursor: pointer;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 17px;
+    font-size: 15px;
     word-spacing: 10px;
     margin: 10px 0 0 25px;
 }
 #final
 {
     font-size: 13px;
-    margin: 15px 0 20px 20px;
+    margin: 15px 0 60px 20px;
 }
 .body-subcontainer
 {
@@ -267,4 +290,31 @@ h3
 .grid-items > p
 {
     font-size: 20px;
+}
+@media all and (max-width:900px)
+{
+    body{overflow-y: scroll;}
+    .youtube-iconname{margin-left: -10px;}
+    .searchdiv{position: fixed;}
+    .left-container{position: fixed; bottom: 0; left: 0; height: 12%; width: 100%; display: flex; flex-direction: row; padding-left: 5px; background-color: white;}
+    .body-subcontainer{grid-template-columns:auto;}
+    .written, #final {display: none;}
+    #home-iconname{flex-direction: column;}
+    #quri-plus{display: inline; font-size: 40px; margin: 5px 0 0 0;}
+    hr{display: none;}
+    #other-iconnames{display: none;}
+    .searchdiv{width: 87%;}
+    #settingdiv{display: none;}
+    #setting-iconname{margin-left: 10px;}
+    #menuicon{display: none;}
+    .placeholder{border: none;}
+    #searchicon{background-color: transparent; margin-left: 120px; border-radius: 50%; padding: 7px 7px 7px 7px;}
+    #user{margin-left: -110px;}
+    #youtubeicon{display: inline;}
+    .signindiv > h4{display: none;}
+    .signindiv{border: none;}
+    input{display: none;}
+    #microphone{display: none;}
+    #square, #dots{display: none;}
+    .grid-items{height: 60%;}
 }
